@@ -1,5 +1,5 @@
 {
-    "ConsulAddress": "172.21.0.2:8500",
+    "ETCDAddress": "172.21.0.2:2379",
     "NatsAddress": "172.21.0.2:4222",
     "ElasticURL": "http://172.21.0.2:9200",
     "HostIP": "49.232.166.55",
