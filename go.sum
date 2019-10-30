@@ -318,13 +318,10 @@ github.com/linode/linodego v0.10.0/go.mod h1:cziNP7pbvE3mXIPneHj0oRY8L1WtGEIKlZ8
 github.com/liquidweb/liquidweb-go v1.6.0/go.mod h1:UDcVnAMDkZxpw4Y7NOHkqoeiGacVLEIG/i5J9cyixzQ=
 github.com/liuyuexclusive/future.srv.basic v1.0.1 h1:ZBE/UHN3vkWF+rY8qsqtKGuFcXeMbXeOhKWclu3tZIM=
 github.com/liuyuexclusive/future.srv.basic v1.0.1/go.mod h1:npwle+nUmCC9w1tGDLhEBoV/qNhWQ82q2SAHgRiNCjA=
-github.com/liuyuexclusive/future.web.basic v0.0.0-20191028072352-c998859fcadf h1:eYVLUiOw2TfPI4mprcsFqQVqRn94weFgEd1f+dpgHAk=
-github.com/liuyuexclusive/future.web.basic v0.0.0-20191028072352-c998859fcadf/go.mod h1:yrVuOQJXgAOU6oyztNqiFsOS6cCGd4v2Mlx8z5hv0Yk=
 github.com/liuyuexclusive/utils v1.0.3 h1:9K3LaPnRW00z3eQvnxIbZeHMLGZZ3/LmqpGR1S6Rw3Q=
 github.com/liuyuexclusive/utils v1.0.3/go.mod h1:VT8DqrMyhlWP9n/tm24Alq1bR/efFFPTYwZSJiEBi04=
-github.com/liuyuexclusive/utils v1.0.7/go.mod h1:oPjBwCZfnnnllHPisStyUAMV07jPJTGjyYxRqL5EuG4=
-github.com/liuyuexclusive/utils v1.0.8 h1:SMXEbcPMSJly6SQJK1bBmtI4sGjOjySMepRu812WRJo=
-github.com/liuyuexclusive/utils v1.0.8/go.mod h1:oPjBwCZfnnnllHPisStyUAMV07jPJTGjyYxRqL5EuG4=
+github.com/liuyuexclusive/utils v1.0.10 h1:CcHDlXZWgNh0IKWZTrdt2ajXMIVNzlQRFHgeWPoERq8=
+github.com/liuyuexclusive/utils v1.0.10/go.mod h1:oPjBwCZfnnnllHPisStyUAMV07jPJTGjyYxRqL5EuG4=
 github.com/lucas-clemente/quic-go v0.12.0/go.mod h1:UXJJPE4RfFef/xPO5wQm0tITK8gNfqwTxjbE7s3Vb8s=
 github.com/lucas-clemente/quic-go v0.12.1 h1:BPITli+6KnKogtTxBk2aS4okr5dUHz2LtIDAP1b8UL4=
 github.com/lucas-clemente/quic-go v0.12.1/go.mod h1:UXJJPE4RfFef/xPO5wQm0tITK8gNfqwTxjbE7s3Vb8s=

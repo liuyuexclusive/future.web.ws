@@ -7,8 +7,8 @@ import (
 	"github.com/liuyuexclusive/utils/ws"
 
 	"github.com/gin-gonic/gin"
-	"github.com/sirupsen/logrus"
 	_ "github.com/liuyuexclusive/future.web.ws/docs"
+	"github.com/sirupsen/logrus"
 )
 
 type start struct{}
