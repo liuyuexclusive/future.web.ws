@@ -36,6 +36,19 @@ func Validate() gin.HandlerFunc {
 	}
 }
 
+// Send godoc
+// @Summary
+// @Description
+// @Tags 发送消息
+// @Accept  json
+// @Produce  json
+// @Param account body handler.SendMessage true "input"
+// @Param Authorization header string true "授权码"
+// @Success 200 {string} string "ok"
+// @Failure 400 {string} string "ok"
+// @Failure 404 {string} string "ok"
+// @Failure 500 {string} string "ok"
+// @Router /send [put]
 func Send(c *gin.Context) {
 	var send SendMessage
 	if ok := webutil.ReadBody(c, &send); ok {
