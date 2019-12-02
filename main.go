@@ -27,6 +27,7 @@ func (s *start) Start(engine *gin.Engine) {
 func main() {
 	if err := webutil.Startup("go.micro.ws.ws", new(start), func(options *webutil.Options) {
 		options.Port = ":9001"
+		options.IsLogToES = false
 	}); err != nil {
 		logrus.Fatal(err)
 	}
