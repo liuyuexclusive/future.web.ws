@@ -1,6 +1,6 @@
-ETCDAddress: 172.21.0.2:2379
-NatsAddress: 172.21.0.2:4222
-ElasticURL: http://172.21.0.2:9200
-HostIP: 172.21.0.2
+ETCDAddress: 192.168.0.102:2379
+NatsAddress: 192.168.0.102:4222
+ElasticURL: http://192.168.0.102:9200
+HostIP: 192.168.0.102
 APIPort: 9000
-RedisAddress: 172.21.0.2:6379
+RedisAddress: 192.168.0.102:6379

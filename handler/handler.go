@@ -3,11 +3,11 @@ package handler
 import (
 	"context"
 
-	"github.com/liuyuexclusive/utils/webutil"
+	"github.com/liuyuexclusive/utils/web"
 	"github.com/liuyuexclusive/utils/ws"
 
 	"github.com/gin-gonic/gin"
-	"github.com/micro/go-micro/client"
+	"github.com/micro/go-micro/v2/client"
 
 	message "github.com/liuyuexclusive/future.srv.basic/proto/message"
 
@@ -48,10 +48,10 @@ func Validate() gin.HandlerFunc {
 // @Failure 400 {string} string "ok"
 // @Failure 404 {string} string "ok"
 // @Failure 500 {string} string "ok"
-// @Router /send [put]
+// @Router /ws/send [put]
 func Send(c *gin.Context) {
 	var send SendMessage
-	if ok := webutil.ReadBody(c, &send); ok {
+	if ok := web.ReadBody(c, &send); ok {
 		_, err := message.NewMessageService("go.micro.srv.basic", client.DefaultClient).Send(context.TODO(), &message.SendRequest{From: c.GetString("username"), ToList: send.ToList, Title: send.Title, Content: send.Content})
 		if err != nil {
 			c.JSON(400, err.Error())

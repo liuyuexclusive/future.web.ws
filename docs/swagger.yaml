@@ -19,7 +19,7 @@ info:
   title: Future对外开放API
   version: "1.0"
 paths:
-  /send:
+  /ws/send:
     put:
       consumes:
       - application/json

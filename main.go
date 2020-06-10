@@ -1,9 +1,11 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/liuyuexclusive/future.web.ws/handler"
 
-	"github.com/liuyuexclusive/utils/webutil"
+	"github.com/liuyuexclusive/utils/web"
 	"github.com/liuyuexclusive/utils/ws"
 
 	"github.com/gin-gonic/gin"
@@ -14,9 +16,19 @@ import (
 type start struct{}
 
 func (s *start) Start(engine *gin.Engine) {
-	engine.Use(handler.Validate())
 	ws.Serve(engine, "/ws")
-	engine.PUT("/send", handler.Send)
+	basic := engine.Group("/ws")
+	authorized := basic.Group("/")
+
+	authorized.Use(handler.Validate())
+	{
+		authorized.PUT("/send", handler.Send)
+
+	}
+
+	basic.GET("/test", func(c *gin.Context) {
+		c.String(http.StatusOK, "test ok")
+	})
 }
 
 // @title Future对外开放API
@@ -25,7 +37,7 @@ func (s *start) Start(engine *gin.Engine) {
 // @host
 // @BasePath
 func main() {
-	if err := webutil.Startup("go.micro.ws.ws", new(start), func(options *webutil.Options) {
+	if err := web.Startup("go.micro.api.ws", new(start), func(options *web.Options) {
 		options.Port = ":9001"
 		options.IsLogToES = false
 	}); err != nil {
